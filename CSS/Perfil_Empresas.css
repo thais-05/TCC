@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: oldlace;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    color: #fdf5e6;
+}
+
+.form-control {
+    max-width: 50vh;
+    height: 5vh;
+    font-size: 0.9rem;
+}
+
+.btn img {
+    height: 1.5rem;
+}
+
+#logo {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do perfil da empresa */
+.container {
+    max-width: 1000px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.card .text-center img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #147a60;
+    margin-top: -50px;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Botões de ação */
+.btn-primary {
+    background-color: #147a60;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #105c4a;
+}
+
+.btn-outline-secondary {
+    border-color: #999;
+    color: #666;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: color 0.3s, border-color 0.3s;
+    margin: 5px;
+}
+
+.btn-outline-secondary:hover {
+    color: #333;
+    border-color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card .text-center img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}

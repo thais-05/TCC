@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: oldlace;
+}
+
+
+.instagram-layout {
+  display: flex;
+  width: 100%;
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 12.4%;
+  position: relative;
+  background: #fff;
+  border-right: 1px solid #dbdbdb;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.logout-item {
+  position: relative;
+  margin-top: auto;/* Posiciona no rodapé da barra lateral */
+  width: 100%; /* Mantém a largura do menu */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Ajusta alinhamento */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #262626;
+  padding: 10px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.menu-item:hover {
+  color: #3897f0;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+/* Conteúdo principal */
+.post-container {
+  margin-left: 15%;
+  /* Ajusta margem para a nova largura da barra lateral */
+  padding: 20px;
+  width: 85%;
+  /* Compensa a redução da barra lateral */
+}
+
+.post {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.location {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.post-image img {
+  width: 100%;
+  display: block;
+}
+
+.post-footer {
+  padding: 10px;
+}
+
+.likes,
+.description {
+  margin: 5px 0;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 2.5%;
+    /* Barra lateral ainda menor em telas pequenas */
+  }
+ 
+.logout-item {
+  position: absolute;
+  margin-top: 150vw;/* Posiciona no rodapé da barra lateral */
+  width: 100%; /* Mantém a largura do menu */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+  .post-container {
+    margin-left: 10%;
+    /* Ajusta margem para a nova largura da barra lateral */
+    width: 90%;
+    /* Compensa a largura reduzida da barra lateral */
+  }
+
+  .menu {
+    flex-direction: column;
+    /* Mantém o menu como lista vertical */
+    align-items: center;
+    /* Centraliza o menu */
+  }
+
+  .menu-item {
+    justify-content: center;
+    /* Centraliza os ícones no menu lateral */
+  }
+
+  .menu-icon {
+    margin-right: 0;
+    /* Remove o espaço entre ícones e texto */
+  }
+
+  .menu-item span {
+    display: none;
+    /* Oculta o texto dos itens do menu */
+  }
+}

@@ -1,0 +1,191 @@
+/* Reset básico de margens e padding para garantir consistência */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-image: url(../IMG/BackgroundDesktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #D5F5E3;
+}
+
+/* Centraliza o conteúdo em telas grandes */
+main.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+#senha{
+    font-size: 14px;
+}
+/* Campos de endereço e CEP lado a lado */
+.d-flex .form-control {
+    flex: 1;
+    margin: 0;
+}
+
+/* Estilo para a imagem que aparece ao lado do formulário em telas grandes */
+#imagem {
+    position: relative;
+}
+
+/* Ajusta a imagem para ser responsiva e não ultrapassar o limite de largura */
+.imagem {
+    max-width: 80vw;
+    height: auto;
+}
+
+/* Estilos gerais para a seção de cadastro */
+#cadastro {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cadastro {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para o título "Cadastro" */
+.titlogin {
+    color: #D5F5E3;
+    margin-bottom: 20px;
+}
+
+/* Botão de cadastro */
+.cademail {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Estilo para a barra de seleção */
+#tipoCadastro {
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para os campos de input */
+.form-control {
+    font-size: 1rem;
+    max-width: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.form-control:hover {
+    background-color: #eeeeee75;
+}
+
+.form-control:focus-visible {
+    outline: 1px solid #7a1431;
+}
+
+/* Efeito hover no botão de cadastro */
+.cademail:hover {
+    background-color: rgb(46, 45, 45);
+}
+
+/* Estilo para organização em colunas nos formulários */
+.row.g-3 .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Espaço entre os cam pos */
+}
+
+/* Ajusta responsividade para telas menores */
+@media screen and (max-width: 1039px) {
+    body {
+        background-image: url(../IMG/BackgroundDesktop.png);
+        background-size: 100%;
+    }
+
+    #cadastro {
+        width: 70%;
+    }
+
+    .cadastro {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(../IMG/BackgroundMobile.png);
+        background-size: 100%;
+        margin-top: -40px;
+    }
+
+    #tipoCadastro {
+        width: 100% !important;
+    }
+
+    #imagem {
+        display: none;
+    }
+
+    #cadastro {
+        margin-top: 20vw;
+        width: 80vw;
+    }
+
+    .cadastro {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .row.g-3 {
+        flex-direction: column;
+        /* Alinha em uma única coluna no modo mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-box input {
+        width: 100%;
+        /* Em telas muito pequenas, ocupa 100% da largura do container */
+    }
+}
+
+/* Estilo adicional para o alinhamento vertical dos campos em grupos */
+.campo-horizontal {
+    display: flex;
+    /* Ativa o Flexbox */
+    gap: 10px;
+    /* Espaçamento entre os inputs */
+    justify-content: space-between;
+    /* Alinha os inputs */
+}
+
+.campo-horizontal .form-control {
+    flex: 1;
+    /* Faz os inputs ocuparem o mesmo tamanho */
+    min-width: 0;
+    /* Evita problemas de quebra */
+}
+
+.campo-horizontal .form-control:last-child {
+    max-width: 100px;
+    /* Define um tamanho fixo para o campo de número */
+}

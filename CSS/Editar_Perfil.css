@@ -1,0 +1,118 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f7356 ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: oldlace;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: oldlace;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botão */
+.btn {
+    padding: 10px 20px;
+    background-color: #0f7356;
+    color: #fff;
+    font-size: 16px;
+    align-self: center;
+    width: 70vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #073f2f;
+}
+
+/* Imagem e upload */
+.text-center {
+    text-align: center;
+}
+
+img.rounded-circle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="file"],
+    button {
+        font-size: 14px;
+    }
+
+    img.rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,77 @@
+/* Configurações gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.form-control {
+  max-width: 300px;
+  border-radius: 30px;
+}
+
+.btn-outline-light {
+  border-radius: 30px;
+}
+
+/* Título */
+h2 {
+  font-size: 2rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* Botão */
+.btn-success {
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #0f5d46;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-image {
+    height: 150px;
+  }
+
+  .form-control {
+    max-width: 100%;
+  }
+}

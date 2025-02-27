@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../IMG/BackgroundDesktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+main.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#imagem {
+    max-width: 80vw;
+    height: auto;
+}
+
+.imagem {
+    height: 37.5vw;
+}
+
+#login {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titlogin {
+    color: #D5F5E3;
+}
+
+.cademail {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.continue {
+    color: #D5F5E3;
+}
+
+.botomgoogle {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.imgbotom {
+    width: 20px;
+    height: auto;
+}
+
+.input-box input {
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    padding: 0.7rem 1.1rem;
+    width: 100%;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #7a1431;
+}
+
+.aviso {
+    font-size: 0.9rem;
+    color: #D5F5E3;
+}
+
+.botomcor:hover {
+    background-color: rgb(46, 45, 45);
+}
+
+.botomgoogle:hover {
+    border-color: rgb(241, 120, 120);
+}
+
+/* Ajuste do background para resoluções diferentes */
+@media screen and (max-width: 1039px) {
+    body {
+        background-image: url(../IMG/BackgroundDesktop.png);
+        background-size: 100%;
+    }
+
+    #login {
+        width: 70%;
+    }
+
+    .login {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        background-image: url(../IMG/BackgroundMobile.png);
+        background-size: 100%;
+    }
+
+    #imagem {
+        display: none;
+    }
+
+    #login {
+        margin-top: 20vw;
+        width: 80vw;
+    }
+
+    .login {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .input-box input {
+        width: 90%;
+        /* Ajusta a largura em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-box input {
+        width: 100%;
+        /* Em telas muito pequenas, ocupa 100% da largura do container */
+    }
+}

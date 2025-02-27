@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#imagem {
+    position: relative;
+    margin-right: 100px;
+    margin-top: -80px;
+}
+
+
+/* Container principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilos personalizados */
+
+.left-section {
+    background-image: url(IMG/BackgroundEscolha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    color: #fdf5e6; /* Tons claros para contraste */
+}
+
+.right-section {
+    background-color: #070707; /* Preto para contraste visual */
+    color: #fff; /* Branco para texto */
+}
+
+.btn-custom {
+    background-color: #147a60; /* Verde para botões */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #105c4a; /* Verde mais escuro no hover */
+}
+
+.text-muted-custom {
+    color: #ccc !important; /* Cinza claro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #imagem{
+        display: none;
+    }
+    .left-section {
+        display: none; /* Oculta a coluna esquerda em telas pequenas */
+    }
+
+    .right-section {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .btn-custom {
+        width: 90%; /* Ajusta largura dos botões */
+    }
+}

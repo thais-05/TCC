@@ -1,0 +1,281 @@
+body {
+    background-color: oldlace;
+    overflow-x: hidden;
+}
+
+.perfil1 {
+    width: 100%;
+    gap: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15vh;
+}
+
+.imgtudo {
+    height: 40%;
+    width: 100%;
+}
+
+.imgperfil {
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 100%;
+    margin-top: -110px;
+    margin-left: 80px;
+    border: 2px solid #0F7356;
+    border-right: 3px solid #0F7356;
+}
+
+.textodoador {
+    background-color: #0f7357c7;
+    margin-top: 28vh;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    padding: 17px;
+    height: 32%;
+    border-radius: 10px;
+    border: 3px solid;
+    text-justify: auto;
+    width: 100%;
+}
+
+.legdados {
+    margin-left: -5vw;
+    font-size: 30px;
+    margin-top: 2vh;
+}
+
+.dados {
+    margin-top: 25vh;
+    margin-left: -18vw;
+    gap: 10px;
+    width: 190vh;
+}
+
+/* Responsividade para frase inspiradora */
+@media (max-width: 768px) {
+    .inspiracao {
+        font-size: 16px; /* Reduz tamanho da fonte */
+        padding: 8px;
+        max-width: 90%; /* Expande para ocupar mais espaço */
+    }
+}
+
+@media (max-width: 480px) {
+    .inspiracao {
+        font-size: 14px; /* Fonte menor para telas pequenas */
+        padding: 5px;
+        max-width: 95%; /* Aproxima-se das bordas */
+    }
+}
+
+.textinho {
+    font-size: 20px;
+    text-justify: auto;
+}
+
+.campobotao {
+    margin-top: -3vh;
+    margin-left: 2.5vw;
+}
+
+.botao2 {
+    margin-left: 0.5vw;
+}
+
+.botao {
+    background-color: #0F7356;
+    border: 3px solid;
+    border-color: #033627;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 2vh;
+    width: 110px;
+}
+
+.botao:hover {
+    background-color: #118665e0;
+    border-color: #19382f9a;
+}
+
+.magemtexto {
+    margin-top: 2.5vh;
+}
+
+.legbotao {
+    font-size: 15px;
+    margin-top: 0.5vh;
+}
+
+.home {
+    color: oldlace;
+}
+
+.imgnav {
+    width: 2.8vw;
+    visibility: visible;
+}
+
+.imgnav:hover {
+    color: black;
+}
+
+
+.margem {
+    margin-left: 1vw;
+}
+
+#logo {
+    height: 33px;
+    /* Altura do logo */
+    width: 33px;
+    /* Largura do logo */
+    border-radius: 50%;
+    /* Formato circular */
+    object-fit: cover;
+    /* Ajusta a imagem */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tudo {
+    width: 100%;
+    border-radius: 6px;
+    flex-direction: column;
+    margin-bottom: 0;
+    max-height: 100%;
+    height: 100% !important;
+}
+
+.juntatudo {
+    margin-left: 1%;
+}
+
+.informacoes {
+    width: 48%;
+    margin-left: 0px;
+    margin-top: 20vh;
+    margin-left: 2%;
+}
+
+.tamanho {
+    width: 100%;
+}
+
+.fonte {
+    font-size: 20px;
+    margin-left: 6%;
+}
+
+.nome {
+    font-size: 30px;
+    width: 1200px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.doador {
+    width: 1200px;
+    font-size: 20px;
+    margin-left: 0.3%;
+    color: #0F7356;
+}
+
+p {
+    font-weight: 640;
+}
+
+.textodoador2 {
+    visibility: hidden;
+    display: none;
+}
+
+@media(max-width: 1260px) {
+    .margemsair {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 1100px) {
+    .textodoador {
+        visibility: hidden;
+        display: none;
+    }
+
+    .dados {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .textodoador2 {
+        background-color: #0f7357c7;
+        border-radius: 10px;
+        border: 3px solid;
+        text-align: justify;
+        margin: 10px auto;
+        width: 90%;
+        visibility: visible;
+        display: flex;
+        padding: 12px;
+    }
+
+    .roxo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .margemsair {
+       
+        text-align: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .imgperfil {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .perfil1 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dados {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .botao {
+        margin: 5px;
+    }
+}
+
+.fa {
+    margin-top: 0.8vh;
+    font-size: 3.7vh;
+    color: oldlace;
+}
+
+.margemnavbar {
+    margin-left: 2vw;
+}
+
+.margemnavbar2 {
+    margin-left: -42vw !important;
+}

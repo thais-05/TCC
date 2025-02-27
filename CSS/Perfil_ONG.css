@@ -1,0 +1,234 @@
+body {
+    background-color: #FDF5E6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Ajusta o tamanho dos botões e imagens dentro do form */
+.form-control {
+    max-width: 50vh;
+    height: 5vh;
+    font-size: 0.9rem;
+}
+.home {
+    color: oldlace;
+}
+.margemnavbar {
+    margin-left: 1vw;
+}
+.margemsair{
+    margin-left: -3vw;
+}
+.margemnavbar2{
+margin-left: 5vw !important;
+}
+.margemalterar{
+    margin-left: -68vw;
+}
+.texto{
+    width: 70%;
+    text-align: justify;
+    height: auto;
+    margin-left: 15% !important;
+}
+/* Estilo para o botão "Doe Agora" */
+#doeAgora {
+    display: inline-block; /* Garante alinhamento adequado */
+    white-space: nowrap; /* Impede quebra de linha */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #2f2525; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor de mão ao passar */
+    text-align: center; /* Centraliza o texto */
+}
+.fa {
+    margin-top: 0.8vh;
+    font-size: 3.7vh;
+    color: oldlace;
+}
+#doeAgora:hover {
+    background-color: #271818; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Efeito de zoom ao passar */
+}
+
+
+/* Ajuste do logo */
+#logo {
+    height: 33px; /* Altura do logo */
+    width: 33px; /* Largura do logo */
+    border-radius: 50%; /* Formato circular */
+    object-fit: cover; /* Ajusta a imagem */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.nav-link {
+    font-size: 1rem; /* Ajuste do tamanho do texto */
+   
+}
+
+.ctt{
+    margin-right: 1030px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #logo {
+        margin: 0 auto; /* Centraliza o logo em dispositivos móveis */
+    }
+}
+
+
+header {
+    background-color: #0F7356;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #0F7356;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.header {
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0;
+    text-align: justify;
+}
+
+.section.texto {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.section1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #271818;
+  border-color: #271818;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cta button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: rgb(246, 243, 238);
+    text-align: center;
+    transition: transform 0.2s;
+    size: 50%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px; /* Altura da imagem */
+    object-fit: cover; /* Ajuste a imagem sem distorcer */
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    margin: 10px 0; /* Margem para garantir que não encoste nas bordas do card */
+    padding: 0 15px; /* Garantir que a imagem tenha espaço ao redor */
+}
+
+
+.card-title {
+    font-size: 1.25rem; /* Aumenta o tamanho do título */
+    color: black; /* Cor de destaque para o título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+
+.card-body h5 {
+    text-align: center; /* Centraliza o título se necessário */
+}
+
+
+.Carrousel1 {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Ajustes para o Carrossel */
+#carouselId{
+    width: 60%;
+    height: 70%;
+    margin-left: 20%;
+}
+.alto{
+    margin-top: 80px;
+  }
+
+.but{
+    border: none;
+    background-color: transparent;
+}  
+
+.letra{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #343a40;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .section.texto {
+        flex: 1 1 100%;
+    }
+
+    .Carrousel1 {
+        height: 300px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
