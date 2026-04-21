@@ -62,8 +62,8 @@ $tipo_usuario = $_SESSION['tipo'] ?? null; // 'usuario', 'ong' ou outro tipo def
     </aside>
 
     <main class="post-container">
-      <h2 style="text-align: center;">Bem-Vindo à Una!</h2>
-      <h4 style="text-align: center;">Feed de Publicações</h4>
+      <h2 style="text-align: center;" class="cortexto">Bem-Vindo à Una!</h2>
+      <h4 style="text-align: center;" class="cortexto">Feed de Publicações</h4>
 
       <?php
       // Código para exibir as publicações

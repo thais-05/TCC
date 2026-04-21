@@ -21,7 +21,9 @@ body {
   height: 100vh;
   position: fixed;
 }
-
+.cortexto{
+  color: #072a20;
+}
 .logout-item {
   position: relative;
   margin-top: auto;/* Posiciona no rodapé da barra lateral */
@@ -67,10 +69,10 @@ body {
 
 .post {
   background: #fff;
-  border: 1px solid #dbdbdb;
+  border: 2px solid #0f7356;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
