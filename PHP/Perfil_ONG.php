@@ -68,22 +68,38 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
 <body>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0f7356;">
+      <div></div>
       <div class="container-fluid">
+        <div class="d-flex align-items-center ms-auto">
+            
+            <a class="navbar-brand" href="#">
+              <img src="../IMG/logo_una.PNG" alt="Logo UNA" id="logo">
+            </a>
+          </div>
+
+          <div>
         <a class="navbar-brand" href="Tela_Inicial.php" style="color: oldlace;">UNA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
           aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse tamanho" id="navbarContent">
+        </div>
+
+          <div class="collapse navbar-collapse tamanho" id="navbarContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <a href="Tela_Inicial.php"><i class="fa fa-home margemnavbar " aria-hidden="true"></i></a>
                  
                 </ul>
-                <div class="margemsair" style="margin-right: 30px;"></div>
+                <div class="margemsair"></div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
                 </ul>
             </div>
+          
+        </div>
+      </div>
+
+      
         <div class="collapse navbar-collapse margemalterar" id="navbarContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <?php if ($edicaoPermitida): ?>
@@ -91,32 +107,31 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
                 <a class="nav-link dropdown-toggle" href="#" id="perfilDropdown" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false" style="color: oldlace;">Alterar Perfil</a>
                 <div class="dropdown-menu" aria-labelledby="perfilDropdown">
+                  <a class="dropdown-item" href="...">Seus dados</a>
                   <a class="dropdown-item" href="Editar_perfil_ONG.php">Editar Perfil</a>
                   <a class="dropdown-item" href="Excluir_perfil_ong.php">Excluir Perfil</a>
+
                 </div>
               </li>
             <?php endif; ?>
           </ul>
-          <div class="d-flex align-items-center ms-auto">
-            
-            <a class="navbar-brand" href="#">
-              <img src="../IMG/logo_una.PNG" alt="Logo UNA" id="logo">
-            </a>
-          </div>
-        </div>
-      </div>
+
     </nav>
   </header>
+
 
   <main>
     <div class="container mt-5">
       <div class="text-center">
         <h1>Bem-vindo à ONG <?php echo htmlspecialchars($ong['nome']); ?></h1>
               <br>
-      
+              <div class="divimgong">
+
+              </div>
       <div class="section texto">
         <h3 class="letra">Nossa Missão:</h3>
         <br>
+        <div></div>
         <p>Na <?php echo htmlspecialchars($ong['nome']);?>, <?php echo htmlspecialchars($ong['descricao']);?></p>
       </div class="dados">
       <?php if ($edicaoPermitida): ?>

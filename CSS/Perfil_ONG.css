@@ -24,9 +24,7 @@ body {
 .margemnavbar2{
 margin-left: 5vw !important;
 }
-.margemalterar{
-    margin-left: -68vw;
-}
+
 .texto{
     width: 70%;
     text-align: justify;
@@ -48,7 +46,7 @@ margin-left: 5vw !important;
 }
 .fa {
     margin-top: 0.8vh;
-    font-size: 3.7vh;
+    font-size: 3.2vh;
     color: oldlace;
 }
 #doeAgora:hover {
@@ -94,6 +92,15 @@ header {
 
 .section {
     padding: 20px;
+    
+}
+.divimgong{
+    background-color: aqua;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    background-image: url(../IMG/BackgroundEscolha.png);
+    height: 50dvh;
 }
 
 .section img {
