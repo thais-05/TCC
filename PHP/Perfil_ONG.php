@@ -61,6 +61,7 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-vindo à ONG <?php echo htmlspecialchars($ong['nome']); ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/62c925f2a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../CSS/Perfil_ONG.css">
 </head>
@@ -105,14 +106,17 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
             <?php if ($edicaoPermitida): ?>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="perfilDropdown" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false" style="color: oldlace;">Alterar Perfil</a>
-                <div class="dropdown-menu" aria-labelledby="perfilDropdown">
-                  <a class="dropdown-item" href="...">Seus dados</a>
-                  <a class="dropdown-item" href="Editar_perfil_ONG.php">Editar Perfil</a>
-                  <a class="dropdown-item" href="Excluir_perfil_ong.php">Excluir Perfil</a>
+    aria-haspopup="true" aria-expanded="false" style="color: oldlace;">
+    
+            <i class="bi bi-gear "></i> Alterar Perfil
 
-                </div>
-              </li>
+          </a>
+        <div class="dropdown-menu" aria-labelledby="perfilDropdown">
+          <a class="dropdown-item" href="Dados_ONG.php">Seus dados</a>
+          <a class="dropdown-item" href="Editar_perfil_ONG.php">Editar Perfil</a>
+          <a class="dropdown-item" href="Excluir_perfil_ong.php">Excluir Perfil</a>
+  </div>
+</li>
             <?php endif; ?>
           </ul>
 

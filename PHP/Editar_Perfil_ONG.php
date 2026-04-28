@@ -71,7 +71,8 @@ try {
     <link rel="stylesheet" href="../CSS/Editar_Perfil.css" type="text/css">
 </head>
 
-<body>
+<body>~
+    
     <main class="container mt-5">
         <h1>Editar Perfil</h1>
         <?php if (isset($_SESSION['error_message'])): ?>
@@ -81,21 +82,25 @@ try {
         <?php unset($_SESSION['error_message']);
         endif; ?>
         <form method="POST" action="Editar_Perfil_ong.php">
-            <div class="mb-3">
+            <div class="row mb-3">
+            <div class="col mb-6">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" id="nome" name="nome" class="form-control" value="<?= htmlspecialchars($user['nome']) ?>" required>
             </div>
-            <div class="mb-3">
+            <div class="col mb-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" id="email" name="email" class="form-control" value="<?= htmlspecialchars($user['email_ong']) ?>" required>
             </div>
-            <div class="mb-3">
+            </div>
+             <div class="row mb-6">
+            <div class="col mb-3">
                 <label for="cnpj" class="form-label">CNPJ</label>
                 <input type="text" id="cnpj" name="cnpj" class="form-control" value="<?= htmlspecialchars($user['cnpj']) ?>" required>
             </div>
-            <div class="mb-3">
+            <div class="col mb-6">
                 <label for="telefone" class="form-label">Telefone</label>
                 <input type="text" id="telefone" name="telefone" class="form-control" value="<?= htmlspecialchars($user['telefone']) ?>" required>
+            </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-4">
