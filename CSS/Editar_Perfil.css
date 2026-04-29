@@ -1,19 +1,32 @@
 /* Configurações gerais */
 body {
     font-family: Arial, sans-serif;
-    background: #0f7356 ;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+    background: #0f7356;
+}
+#navnav {
+  background-color: #0f7356;
+}
+.doadores{
+  margin-top: -10vh;
+}
+.ong{
+  margin-top: -30vh;
+}
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
 }
 
+.nav-link:hover {
+  color: #072a20 !important;
+}
+.botoes-flex{
+    display: flex;
+    flex-direction: row;
+    background-color: #007bff;
+}
 .container {
     max-width: 600px;
-    width: 100%;
     background-color: oldlace;
     padding: 20px;
     border-radius: 10px;
@@ -25,12 +38,24 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
+.btn { 
+    padding: 10px 20px; 
+    background-color: #0f7356; 
+    color: #fff; 
+    font-size: 16px; 
+    align-self: center; 
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; } 
+    
+    
+.btn:hover { background-color: #073f2f; }
 
 /* Estilo do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-}
 
 label {
     font-weight: bold;
@@ -62,25 +87,6 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Botão */
-.btn {
-    padding: 10px 20px;
-    background-color: #0f7356;
-    color: #fff;
-    font-size: 16px;
-    align-self: center;
-    width: 70vh;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #073f2f;
-}
-
-/* Imagem e upload */
 .text-center {
     text-align: center;
 }

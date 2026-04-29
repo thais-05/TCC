@@ -64,6 +64,24 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
     <title>Dados ong</title>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navnav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">UNA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../PHP/Tela_Inicial.php">Home
+            </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
     <main class="centralizar">
     <section class="dados">
         <div>
@@ -93,7 +111,7 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
             <div class="descri">
             <p><?php echo htmlspecialchars($ong['descricao']); ?></p>
             </div>
-            <button>Editar</button>
+            <a href="./Editar_perfil_ONG.php" class="btn btn-dark">Editar</a>
             </div>
     </section>
     </main>
