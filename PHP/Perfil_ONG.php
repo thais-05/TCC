@@ -13,7 +13,7 @@ if (!$id_ong) {
 }
 
 // Consulta SQL para buscar os dados da ONG
-$query = "SELECT nome, email_ong, telefone, cnpj, rede_social, link, descricao, cebas FROM ongs WHERE id_ong = ?";
+$query = "SELECT nome, email_ong, telefone, cnpj, rede_social, link, descricao, perfil_ong FROM ongs WHERE id_ong = ?";
 $stmt = $conn->prepare($query);
 
 if (!$stmt) {
@@ -46,7 +46,7 @@ $ong['telefone'] = defaultIfNull($ong['telefone']);
 $ong['cnpj'] = defaultIfNull($ong['cnpj']);
 $ong['rede_social'] = defaultIfNull($ong['rede_social']);
 $ong['link'] = defaultIfNull($ong['link']);
-$ong['cebas'] = defaultIfNull($ong['cebas']);
+$ong['perfil_ong'] = defaultIfNull($ong['perfil_ong']);
 
 
 // Verifica se a ONG acessada é a mesma que está logada
@@ -130,7 +130,8 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
         <h1>Bem-vindo à ONG <?php echo htmlspecialchars($ong['nome']); ?></h1>
               <br>
               <div class="divimgong">
-
+                
+                  <img src="<?php echo htmlspecialchars($ong['perfil_ong']); ?>" class="imgperfilong" alt="">
               </div>
       <div class="section texto">
         <h3 class="letra">Nossa Missão:</h3>

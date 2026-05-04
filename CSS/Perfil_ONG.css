@@ -95,14 +95,19 @@ header {
     
 }
 .divimgong{
-    background-color: aqua;
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    background-image: url(../IMG/BackgroundEscolha.png);
     height: 50dvh;
-}
+    overflow: hidden;
 
+}
+.imgperfilong{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
 .section img {
     max-width: 100%;
     height: auto;
@@ -116,7 +121,6 @@ footer {
 }
 
 .header {
-    background-image: url('sua-imagem.jpg');
     background-size: cover;
     color: white;
     text-align: center;

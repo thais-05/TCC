@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $descricao = trim(mysqli_real_escape_string($conn, $_POST['descricao'] ?? null));
         $rede_social = trim(mysqli_real_escape_string($conn, $_POST['rede_social'] ?? null));
         $link = trim(mysqli_real_escape_string($conn, $_POST['link'] ?? null));
-        $cebas = $_FILES['cebas'] ?? null;
+        $perfil_ong = $_FILES['perfil_ong'] ?? null;
         $tipo = 'ong';
 
         // Validação básica
@@ -54,17 +54,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Upload do CEBAS (opcional)
         $cebasName = null;
-        if ($cebas && $cebas['error'] === UPLOAD_ERR_OK) {
-            $uploadDir = 'uploads/cebas/';
+        if ($perfil_ong && $perfil_ong['error'] === UPLOAD_ERR_OK) {
+            $uploadDir = 'img_perfil_ong/';
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
 
-            $cebasName = uniqid() . '-' . basename($cebas['name']);
+            $cebasName = uniqid() . '-' . basename($perfil_ong['name']);
             $uploadPath = $uploadDir . $cebasName;
 
-            if (!move_uploaded_file($cebas['tmp_name'], $uploadPath)) {
-                throw new Exception("Erro ao fazer upload do CEBAS.");
+            if (!move_uploaded_file($perfil_ong['tmp_name'], $uploadPath)) {
+                throw new Exception("Erro ao fazer upload da imagem");
             }
         }
 
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $senha_hash = password_hash($senha, PASSWORD_BCRYPT);
 
         // Insere os dados no banco
-        $sql = "INSERT INTO ongs (nome, email_ong, senha, cnpj, telefone, cep, endereco, endereco_numero, descricao, cebas, tipo, rede_social, link, criado_em)
+        $sql = "INSERT INTO ongs (nome, email_ong, senha, cnpj, telefone, cep, endereco, endereco_numero, descricao, tipo, rede_social, link, perfil_ong, criado_em)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())";
         $stmt = $conn->prepare($sql);
         if (!$stmt) {
@@ -93,21 +93,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $stmt->bind_param(
-            "sssssssssssss",
-            $nome,
-            $email,
-            $senha_hash,
-            $cnpj,
-            $telefone,
-            $cep,
-            $endereco,
-            $endereco_numero,
-            $descricao,
-            $cebasName,
-            $tipo,
-            $rede_social,
-            $link
-        );
+    "sssssssssssss",
+    $nome,
+    $email,
+    $senha_hash,
+    $cnpj,
+    $telefone,
+    $cep,
+    $endereco,
+    $endereco_numero,
+    $descricao,
+    $tipo,
+    $rede_social,
+    $link,
+    $perfil_ong
+);
 
         if (!$stmt->execute()) {
             throw new Exception("Erro ao registrar a ONG: " . $stmt->error);

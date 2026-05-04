@@ -47,7 +47,7 @@ $ong['cnpj'] = defaultIfNull($ong['cnpj']);
 $ong['rede_social'] = defaultIfNull($ong['rede_social']);
 $ong['link'] = defaultIfNull($ong['link']);
 $ong['cep'] = defaultIfNull($ong['cep']);
-$ong['cebas'] = defaultIfNull($ong['cebas']);
+$ong['cebas'] = defaultIfNull($ong['perfil_ong']);
 
 
 // Verifica se a ONG acessada é a mesma que está logada
