@@ -1,53 +1,67 @@
-📌 Sobre o Projeto
+# 📌 Sobre o Projeto
 
-Este projeto foi desenvolvido em 2025 como Trabalho de Conclusão de Curso (TCC) do curso técnico de Desenvolvimento de Sistemas da ETEC.
+Este projeto foi desenvolvido em 2025 como Trabalho de Conclusão de Curso (TCC) do curso técnico de Desenvolvimento de Sistemas da ETEC.<br><br>
 
-O sistema foi criado com o objetivo de aplicar, na prática, os conhecimentos adquiridos durante o curso, envolvendo desenvolvimento de software, integração com banco de dados, organização de código, lógica de programação e construção de interfaces funcionais.
+O sistema foi criado com o objetivo de aplicar, na prática, os conhecimentos adquiridos durante o curso, envolvendo desenvolvimento de software, integração com banco de dados, organização de código, lógica de programação e construção de interfaces funcionais.<br><br>
 
 Atualmente, o projeto continua em desenvolvimento e está passando por melhorias e novas implementações, com foco em desempenho, usabilidade, organização do código e adição de novas funcionalidades.
 
-🚀 Objetivos do Projeto
-Aplicar conceitos de desenvolvimento Full Stack;
-Utilizar banco de dados para armazenamento e gerenciamento de informações;
-Praticar versionamento de código e organização de projeto;
+---
 
-🛠️ Tecnologias Utilizadas
+# 🚀 Objetivos do Projeto
 
-As tecnologias utilizadas no projeto incluem:
+- Aplicar conceitos de desenvolvimento Full Stack;<br>
+- Utilizar banco de dados para armazenamento e gerenciamento de informações;<br>
+- Praticar versionamento de código e organização de projeto.
 
-PHP
-JavaScript
-HTML5
-CSS3
-MySQL
-Git e GitHub
+---
 
-⚙️ Funcionalidades
-Cadastro de usuários
-Integração com banco de dados
-Sistema de login
-Interface responsiva
-Gerenciamento de informações
-Validação de dados
+# 🛠️ Tecnologias Utilizadas
 
-🔄 Melhorias em Desenvolvimento
+- PHP<br>
+- JavaScript<br>
+- HTML5<br>
+- CSS3<br>
+- MySQL<br>
+- Git e GitHub
 
-Atualmente o projeto está recebendo novas melhorias, como:
+---
 
-Melhor organização da arquitetura;
-Melhorias visuais na interface;
-Novas funcionalidades;
+# ⚙️ Funcionalidades
 
-📖 Aprendizados
+- Cadastro de usuários;<br>
+- Integração com banco de dados;<br>
+- Sistema de login;<br>
+- Interface responsiva;<br>
+- Gerenciamento de informações;<br>
+- Validação de dados.
 
-Durante o desenvolvimento deste TCC, foram aplicados conhecimentos importantes como:
+---
 
-Integração entre front-end e back-end;
-Manipulação de banco de dados;
-Estruturação de sistemas;
-Trabalho em equipe;
-Controle de versão com Git.
+# 🔄 Melhorias em Desenvolvimento
 
-TCC — ETEC Desenvolvimento de Sistemas (2025)
+Atualmente o projeto está recebendo novas melhorias, como:<br><br>
 
-Atualmente em evolução e recebendo melhorias contínuas
+- Melhor organização da arquitetura;<br>
+- Melhorias visuais na interface;<br>
+- Novas funcionalidades.
+
+---
+
+# 📖 Aprendizados
+
+Durante o desenvolvimento deste TCC, foram aplicados conhecimentos importantes como:<br><br>
+
+- Integração entre front-end e back-end;<br>
+- Manipulação de banco de dados;<br>
+- Estruturação de sistemas;<br>
+- Trabalho em equipe;<br>
+- Controle de versão com Git.
+
+---
+
+# 👨‍💻 Desenvolvimento
+
+TCC — ETEC Desenvolvimento de Sistemas (2025)<br><br>
+
+Atualmente em evolução e recebendo melhorias contínuas.
