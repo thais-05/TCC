@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Upload do CEBAS (opcional)
         $cebasName = null;
         if ($cebas && $cebas['error'] === UPLOAD_ERR_OK) {
-            $uploadDir = 'uploads/cebas/';
+            $uploadDir = 'uploads/';
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
@@ -67,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new Exception("Erro ao fazer upload do CEBAS.");
             }
         }
+        
 
         // Verifica duplicidade de email ou CNPJ
         $sqlCheck = "SELECT COUNT(*) FROM ongs WHERE email_ong = ? OR cnpj = ?";

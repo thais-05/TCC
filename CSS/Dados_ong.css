@@ -9,7 +9,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.divimg{
+    width: 70%;
+    height: 38dvh;
+}
 .dados{
     background-color: #fdf5e6;
     text-align: center;
@@ -37,8 +40,8 @@ body {
 
 
 .imagem{
-    max-width: 60%;
-    max-height: 40dvh;
+    width: clamp(70%, 100%, 120%);
+    height: 100%;
     background-color: #072a20;
 }
 .dadostexto{

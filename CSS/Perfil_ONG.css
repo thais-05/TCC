@@ -26,10 +26,10 @@ margin-left: 5vw !important;
 }
 
 .texto{
-    width: 70%;
+    width: 80%;
     text-align: justify;
     height: auto;
-    margin-left: 15% !important;
+    margin-left: 10% !important;
 }
 /* Estilo para o botão "Doe Agora" */
 #doeAgora {
@@ -95,12 +95,23 @@ header {
     
 }
 .divimgong{
-    background-color: aqua;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    background-image: url(../IMG/BackgroundEscolha.png);
-    height: 50dvh;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 60dvh;
+}
+.tituloong{
+    border-radius: 7px;
+    background-color: #0F7356;
+    color: #FDF5E6;
+    padding: 6px;
+}
+.imgprin{
+    width: clamp(70%, 100%, 120%);
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    image-rendering: auto;
 }
 
 .section img {
@@ -126,7 +137,6 @@ footer {
 .header h1 {
     margin: 0;
 }
-
 .content {
     display: flex;
     flex-wrap: wrap;

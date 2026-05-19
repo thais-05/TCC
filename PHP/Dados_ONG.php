@@ -86,11 +86,12 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
     <section class="dados">
         <div>
         <h2>Dados da ong</h2>
-        <div class="mt-2">
+        <h4 class="text-start">Imagem perfil:</h4>
+        <div class="mt-2 d-flex justify-content-center">
             
-            <h4 class="text-start">Imagem perfil:</h4>
-            
-            <img src="../IMG/perfil1.jpg" alt="" class="imagem  mt-2">
+            <div class="divimg">
+            <img src="./uploads/<?php echo htmlspecialchars($ong['cebas']); ?>" alt="" class="imagem  mt-2">
+            </div>
             </div>
             <h4 class="mt-2 text-start">Seus Dados:</h4>
             <div class="d-flex text-start gap-5 align-items-center dadostexto centro">

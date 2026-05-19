@@ -127,26 +127,14 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
   <main>
     <div class="container mt-5">
       <div class="text-center">
-        <h1>Bem-vindo à ONG <?php echo htmlspecialchars($ong['nome']); ?></h1>
-              <br>
+        <h2>Bem-vindo à ONG <span class="tituloong"><?php echo htmlspecialchars($ong['nome']); ?></span></h2>
+        <br>
               <div class="divimgong">
-
+              <img src="./uploads/<?php echo htmlspecialchars($ong['cebas']); ?>" class="imgprin" alt="">
               </div>
       <div class="section texto">
         <h3 class="letra">Nossa Missão:</h3>
-        <br>
-        <div></div>
-        <p>Na <?php echo htmlspecialchars($ong['nome']);?>, <?php echo htmlspecialchars($ong['descricao']);?></p>
-      </div class="dados">
-      <?php if ($edicaoPermitida): ?>
-        <h3>Seus dados:</h3>
-        <p>Nome: <?php echo htmlspecialchars($ong['nome']); ?></p>
-        <p>Email: <?php echo htmlspecialchars($ong['email_ong']); ?></p>
-        <p>Telefone: <?php echo htmlspecialchars($ong['telefone']); ?></p>
-        <p>CNPJ: <?php echo htmlspecialchars($ong['cnpj']); ?></p>
-        
-      <?php endif; ?>
-      </div>
+        <p class="fs-4"><?php echo htmlspecialchars($ong['nome']);?>, <?php echo htmlspecialchars($ong['descricao']);?></p>
     </div>
 
     <!-- Exibição das postagens -->
