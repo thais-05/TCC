@@ -36,7 +36,27 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.bi{
+    font-size: 30px;
+    margin-bottom: -4%;
+    margin-left: -5%;
+    color: rgb(67, 63, 63);
+}
+.divimg{
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    height: 22dvh;
+    align-items: end;
+}
+.imgong{
+     width: clamp(70%, 100%, 120%);
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    image-rendering: auto;
 }
 .btn { 
     padding: 10px 20px; 

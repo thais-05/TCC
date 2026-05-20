@@ -166,19 +166,19 @@ include 'conexao.php'; // Conexão com o banco de dados
                 <div class="ong-container">
                     <?php
                     // Consulta para obter todas as ONGs
-                    $sql = "SELECT id_ong, nome, logo, descricao FROM ongs";
+                    $sql = "SELECT id_ong, nome, logo, descricao, cebas FROM ongs";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
                         while ($ong = $result->fetch_assoc()) {
                             $id_ong = htmlspecialchars($ong['id_ong']);
                             $nome = htmlspecialchars($ong['nome'] ?? 'Nome não disponível');
-                            $logo = htmlspecialchars($ong['cebas'] ?? '../IMG/default-logo.png');
+                            $logo = !empty($ong['cebas']) ? './uploads/' . htmlspecialchars($ong['cebas']): '../IMG/una.PNG';
                             $descricao = htmlspecialchars($ong['descricao'] ?? 'Descrição não disponível');
 
                             echo '
                             <div class="ong-card">
-                                <img src="../IMG/una.PNG">
+                                <img src="' . $logo . '">
                                 <h3>' . $nome . '</h3>
                                 <a href="Perfil_ONG.php?id_ong=' . $id_ong . '" class="btn">Conhecer</a>
                             </div>';
