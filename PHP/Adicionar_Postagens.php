@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </label>
       <div class="buttons">
         <button type="submit" class="btn btn-success" id="publishBtn">Publicar</button>
-        <button type="button" class="btn btn-cancel" id="cancelBtn">Cancelar</button>
+        <a href="./Tela_Inicial.php"><button type="button" class="btn btn-cancel" id="cancelBtn">Cancelar</button></a>
       </div>
     </form>
   </div>
