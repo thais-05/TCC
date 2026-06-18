@@ -142,8 +142,10 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
       <h3>Nossas postagens:</h3>
       <div class="row">
         <?php
-        $query_posts = "SELECT nome, legenda, imagem FROM publicacoes WHERE id_ong = ? ORDER BY id_publi DESC";
+        $query_posts = "SELECT nome, legenda, imagem, id_publi FROM publicacoes WHERE id_ong = ? ORDER BY id_publi DESC";
         $stmt = $conn->prepare($query_posts);
+
+        
 
         if (!$stmt) {
           die("Erro na preparação da consulta de postagens: " . $conn->error);
@@ -156,16 +158,35 @@ $edicaoPermitida = isset($_SESSION['id_ong']) && $_SESSION['id_ong'] == $id_ong;
         if ($result_posts->num_rows > 0) {
           while ($post = $result_posts->fetch_assoc()) {
         ?>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="<?php echo htmlspecialchars($post['imagem']); ?>" class="card-img-top"
-                  alt="Imagem da postagem">
-                <div class="card-body">
-                  <h5 class="card-title">Postagem</h5>
-                  <p class="card-text">Legenda: <?php echo htmlspecialchars($post['legenda']); ?></p>
-                </div>
-              </div>
-            </div>
+     <?php if ($edicaoPermitida): ?>
+    
+<a href="./Editar_publicacoes.php?id=<?php echo $post['id_publi']; ?>">
+
+<?php endif; ?>
+
+<div class="col-md-4 mb-3">
+    <div class="card">
+
+        <img src="<?php echo htmlspecialchars($post['imagem']); ?>" 
+             class="card-img-top"
+             alt="Imagem da postagem">
+
+        <div class="card-body">
+            <h5 class="card-title"> <?php echo htmlspecialchars($post['nome']); ?></h5>
+
+            <p class="card-text">
+                Legenda: <?php echo htmlspecialchars($post['legenda']); ?>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<?php if ($edicaoPermitida): ?>
+
+</a>
+
+<?php endif; ?>
         <?php
           }
         } else {
